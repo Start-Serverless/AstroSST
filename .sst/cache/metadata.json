@@ -1,0 +1,1 @@
+{"stack.cohenta2-astro-static-sst-Site.json":[{"id":"site","addr":"c851f2a1a13fcdba30a5245b14cf4002b8b44b3970","stack":"cohenta2-astro-static-sst-Site","type":"AstroSite","data":{"mode":"placeholder","path":".","server":"arn:aws:lambda:us-east-1:871600132779:function:cohenta2-astro-static-sst-siteServerFunction6DFA6F-94V0cc7kSDKj","secrets":[]}}]}
