@@ -1,5 +1,5 @@
 import type { SSTConfig } from "sst";
-import { AstroSite } from "sst/constructs";
+import { StaticSite } from "sst/constructs";
 
 export default {
   config(_input) {
@@ -11,7 +11,9 @@ export default {
   },
   stacks(app) {
     app.stack(function Site({ stack }) {
-      const site = new AstroSite(stack, "site");
+      const site = new StaticSite(stack, "site", {
+        buildOutput: "dist",
+      });
       stack.addOutputs({
         url: site.url,
       });
