@@ -1,80 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <header>
-      <h1>Static Sites with Astro and SST</h1>
-    </header>
-    <Navbar />
+    <body>
+      <header>
+        <h1>Static Sites with Astro and SST</h1>
+      </header>
+    </body>
     <main>
-      <h2>Welcome to the Static Sites with Astro and SST Blog</h2>
-      <p>
-        This blog focuses on building static sites using Astro, a modern static
-        site builder, and SST (Serverless Stack), a framework for building
-        serverless apps. You'll find tutorials, guides, and tips to help you get
-        started with building static sites with Astro and SST.
-      </p>
+      <h2>Hello World</h2>
     </main>
 
     <footer>&copy; 2023 Your Blog Name. All rights reserved.</footer>
   </main>
 </Layout>
-
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-
-  nav {
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  nav ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-  }
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-</style>
