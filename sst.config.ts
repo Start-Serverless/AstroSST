@@ -1,18 +1,27 @@
 import type { SSTConfig } from "sst";
-import { StaticSite } from "sst/constructs";
+import {
+  Function,
+  FunctionCode,
+  FunctionEventType,
+} from "aws-cdk-lib/aws-cloudfront";
+import { AstroSite } from "sst/constructs";
 
 export default {
   config(_input) {
     return {
-      name: "astro-static-sst",
+      name: "hybrid-project",
       region: "us-east-1",
       profile: "dev",
     };
   },
   stacks(app) {
     app.stack(function Site({ stack }) {
-      const site = new StaticSite(stack, "site", {
-        buildOutput: "dist",
+      const site = new AstroSite(stack, "site", {
+        cdk: {
+          distribution: {
+            defaultRootObject: "index.html",
+          },
+        },
       });
       stack.addOutputs({
         url: site.url,
